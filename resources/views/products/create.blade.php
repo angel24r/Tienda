@@ -16,6 +16,7 @@
                         Crear Producto                        
                     </div>
                     <div class="card-body">
+                        <!-- en el action se pone la ruta del post y se elige el metodo-->
                         <form action="{{ route('products.store') }}" method="POST">
                             @csrf
                             <div class="form-group">
@@ -27,6 +28,7 @@
                                 <input type="number" class="form-control" name="price">
                             </div>
                             <button type="submit" class="btn btn-primary"> Guardar</button>
+                            <!-- Ruta a la que redireccionara-->
                             <a href="{{ route('products.index') }}" class="btn btn-danger">Cancelar</a>
                         </form>
                     </div>
