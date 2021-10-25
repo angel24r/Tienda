@@ -17,6 +17,11 @@
                         <a href="{{ route('products.create') }}" class="btn btn-success btn-sm float-right">Nuevo producto</a>
                     </div>
                     <div class="card-body">
+                        <!--if es una funcion de blade, seleccionamos el nombre de la variable del with
+                        si existe lo muestra-->
+                        @if(session('info'))
+                            {{ session('info') }}
+                        @endif
                         ...
                     </div>
                 </div>
